@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Makeup Research</title>
+    
+    <!-- include an external style sheet -->
+    <link rel="stylesheet" href="makeupapi.css">  
+    
+    <!-- include an external JavaScript file -->
+    <script src="makeupapi.js"></script>
+  </head>
+  
+  <body>
+    <!-- page content -->
+	<div id="background">
+	<img id="backgroundimg" src="background.jpg" alt="background">
+	</div>
+    <h1>Makeup Brand Info</h1>
+	
+	<div id="inputbox">
+		<input type="text" id="search">
+		<button id="button" onclick="fetchData()">Search</button>
+	</div>
+	<br>
+	<div id="brandlist">
+		<button id="button2" onclick="showBrands()">Show All Brand Name</button>
+	</div>
+	<div id="main"></div>
+	
+	<div id="lightbox" onclick="closeLightBox()">
+		<div id="message">This is a message</div>
+	</div>
+	
+	
+
+		<p id="apidescription">This script uses a fetch request to get makeup information from a free api called <a id="makeup" href="http://makeup-api.herokuapp.com"><em>Makeup Api</em></a>.</p>
+	
+  </body>
+  
+</html>
